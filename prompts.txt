@@ -1,0 +1,63 @@
+ #     prompt = """ Act as a landscape architect and urban planner. Generate a hyper-realistic 3D render of a redesigned Coco Beach public park and dining strip in Dar es Salaam.
+
+    #     **Scene & Camera:**
+    #     * Angle: A wide-angle "hero shot" from the beach looking back toward Toure Drive.
+    #     * Time of Day: Late afternoon, "Golden Hour" lighting with long, soft shadows and a warm glow on the Indian Ocean waves.
+
+    #     **Public Space & Amenities:**
+    #     * The Foreground: A wide, modern pedestrian boardwalk made of sustainable timber and polished stone. 
+    #     * Activities: Public seating made of durable recycled materials, high-quality playground equipment, and an open-air amphitheater for public events.
+    #     * Beachfront: Clean, groomed golden sand with public volleyball nets and designated "safe swimming" zones marked by stylish buoys.
+
+    #     **Business & Dining:**
+    #     * Architecture: A row of 3-4 "Tropical Contemporary" beachfront pavilions. Use glass, light wood, and white steel. 
+    #     * Business Types: Include an upscale glass-fronted seafood restaurant with a rooftop terrace, a modern open-air café serving Tanzanian coffee, and organized, high-end "street food" kiosks for local vendors (Mshikaki/Cassava).
+    #     * Details: Tables with white umbrellas, people in vibrant casual attire (Kitenge accents), and digital menu boards.
+
+    #     **Environment & Infrastructure:**
+    #     * Tropical flora: Dense clusters of swaying palm trees and manicured grassy areas for picnics.
+    #     * Resilience: Subtle sea-wall integration disguised as seating and a smart drainage system to handle coastal flooding.
+
+    #     **Visual Style:**
+    #     * Cinematic architectural visualization, 8k resolution, realistic textures of sand and sea foam, ray-traced water reflections.
+    # """
+    # prompt = """ Act as an urban developer. Generate a hyper-realistic 3D architectural render of a new commercial "Blue Economy" district at Coco Beach, Dar es Salaam. 
+
+    # **Composition & View:** 
+    # * Perspective: A high-angle street-level view looking down Toure Drive towards the ocean. 
+    # * Lighting: "Blue Hour" at dusk, with warm amber glow from office windows and cool blue street lighting reflecting off sleek glass building facades.
+
+    # **Architecture & Infrastructure:**
+    # * Buildings: Mid-to-high-rise mixed-use glass towers with "tropical-modernist" features like vertical gardens, solar louvers, and wide balconies. 
+    # * Business Elements: Ground-floor high-end showrooms, transparent glass-walled cafes with outdoor seating, and digital signage boards in Swahili and English.
+    # * Roads: A clean, multi-lane asphalt road with smart streetlights, clear pedestrian crossings, and modern transit shelters. 
+
+    # **Environment:**
+    # * Contrast: On the left, the sleek, modern business district; on the right, the natural golden sand and dark turquoise Indian Ocean. 
+    # * Details: Executives in business-casual attire walking on wide, stone-tiled sidewalks. High-end electric vehicles parked in neat bays. 
+    # * Flora: Well-maintained palm trees and bougainvillea lining the median strips.
+
+    # **Quality Directives:**
+    # * 8k resolution, photorealistic textures (glass, steel, stone), ray-traced reflections, cinematic architectural visualization style.
+    # """
+    # prompt = """ Act as a professional urban planner and 3D architectural visualizer. 
+
+    # Generate a photorealistic 3D render of a future urban development at Coco Beach, Dar es Salaam, Tanzania. The image should be captured with a cinematic drone perspective, similar to a 50mm lens shot with a shallow depth of field to emphasize the main development area.
+
+    # **Environment Details:**
+    # *   **Location:** Coco Beach, Dar es Salaam, Tanzania (referencing the attached images for geography and water color).
+    # *   **Climate:** Bright, sunny tropical day during golden hour, with soft, natural lighting, warm reflections in the water, and gentle shadows.
+    # *   **Terrain:** Pristine golden-white sand beach transitioning smoothly to crystal-clear turquoise water.
+    # *   **Vegetation:** Lush tropical greenery, palm trees lining the shore, and native Tanzanian flora integrated into the design.
+
+    # **Urban Planning/Design Focus:**
+    # *   **Architecture:** Modern, sustainable tropical architecture (low-rise apartment collection/resort complex). Buildings should feature light, natural materials, green rooftops, and elevated foundations to mitigate flood risk (as mentioned in our previous data profile).
+    # *   **Infrastructure:** Integrate subtle, modern urban planning elements: a well-designed, paved boardwalk/promenade along the coast, subtle wave breaks for coastal protection, and dedicated pedestrian paths connecting the complex. The design must respect the natural coastline as much as possible.
+    # *   **Atmosphere:** The scene should be vibrant and active, including a few realistic human figures enjoying the beach (swimming, sunbathing) and walking along the new promenade.
+
+    # **Quality Directives:**
+    # *   **Style:** Hyper-realistic, professional architectural visualization.
+    # *   **Resolution:** Ultra-high resolution, cinematic quality.
+    # *   **Lighting:** Emphasize vivid colors, highly detailed textures of the sand, water, materials, and foliage. Ensure excellent dynamic range.
+
+    # *Use the provided images as the primary visual guide for location, atmosphere, and geography.* """
