@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "city": "Dar es Salaam, Tanzania",
+    "generated_at": "2025-02-09T15:30:00",
+    "spec_version": "1.0",
+    "data_sources_used": [
+      "terrain",
+      "climate",
+      "soil",
+      "disasters",
+      "infrastructure"
+    ],
+    "design_rationale_summary": "Mixed-use commercial-residential building designed for hot-humid tropical climate with reinforced seismic-resistant structure, natural ventilation priority, flood-resistant elevated ground floor, and expansive clay soil foundation system."
+  },
+  "site": {
+    "coordinates": {
+      "latitude": -6.8165054,
+      "longitude": 39.2894367
+    },
+    "elevation_m": 48,
+    "orientation_deg": 115,
+    "orientation_note": "Building oriented 115\u00b0 (ESE-WNW) to align with prevailing ESE winds at 12.5 km/h for optimal cross-ventilation and to minimize afternoon west-facing wall exposure."
+  },
+  "structure": {
+    "building_type": "mixed_use_commercial",
+    "stories": 5,
+    "total_height_m": 17.5,
+    "footprint": {
+      "shape": "rectangular",
+      "length_m": 24,
+      "width_m": 16,
+      "gross_area_m2": 384
+    },
+    "structural_system": "reinforced_concrete_frame",
+    "foundation": {
+      "type": "reinforced_slab_on_grade",
+      "depth_m": 1.8,
+      "thickness_m": 0.3,
+      "reinforcement": "Y16@200 both ways with edge thickening to 0.5m",
+      "rationale": "Clay loam soil (45% clay) with expansive potential and very high earthquake risk (max 7.4 magnitude) requires reinforced slab foundation below minimum 1.5m depth"
+    },
+    "columns": {
+      "grid_spacing": "6m x 5.33m",
+      "section": "rectangular",
+      "dimensions": "400mm x 400mm",
+      "material": "C25 reinforced concrete with Y16 main bars",
+      "count_per_floor": 20,
+      "rationale": "400mm columns sized for 5-story seismic loads with 120 kPa bearing capacity soil, 6m span beams"
+    },
+    "beams": {
+      "primary": {
+        "width_mm": 300,
+        "depth_mm": 500,
+        "material": "C25 reinforced concrete",
+        "span_m": 6.0
+      },
+      "secondary": {
+        "width_mm": 250,
+        "depth_mm": 400,
+        "material": "C25 reinforced concrete",
+        "span_m": 5.33
+      }
+    },
+    "slabs": {
+      "type": "reinforced_concrete_one_way",
+      "thickness_mm": 150,
+      "material": "C25 concrete with Y12@200 reinforcement",
+      "rationale": "150mm slab adequate for 5.33m spans with seismic detailing for very high earthquake risk"
+    },
+    "walls": {
+      "exterior": {
+        "type": "cavity_wall",
+        "thickness": "230mm total (115mm outer + 50mm cavity + 115mm inner)",
+        "material": "burnt clay brick with cement mortar",
+        "insulation_strategy": "ventilated_cavity_no_insulation",
+        "finishes": "cement plaster exterior, lime plaster interior"
+      },
+      "interior_load_bearing": {
+        "type": "reinforced_masonry",
+        "thickness": "200mm",
+        "material": "concrete block"
+      },
+      "interior_partition": {
+        "type": "lightweight_partition",
+        "thickness": "100mm",
+        "material": "concrete block"
+      }
+    },
+    "roof": {
+      "type": "flat_roof",
+      "structure": "reinforced_concrete_slab",
+      "thickness": "150mm structural + 100mm screed to falls",
+      "slope": "1:60 to drains",
+      "waterproofing": "modified_bitumen_membrane",
+      "finish": "white_reflective_coating",
+      "rationale": "Flat reflective roof optimal for hot climate (31.2\u00b0C max) with proper drainage for 1073mm annual rainfall and 250mm April peak"
+    }
+  },
+  "envelope": {
+    "windows": {
+      "dimensions": "1200mm x 1500mm typical",
+      "frame_material": "aluminum_powder_coated",
+      "glazing": "single_clear_6mm",
+      "opening_type": "casement_fully_opening",
+      "placement_strategy": "opposite_walls_cross_ventilation",
+      "window_wall_ratio": 0.35,
+      "shading": "concrete_overhangs_600mm_all_sides"
+    },
+    "doors": {
+      "entrance": {
+        "dimensions": "2100mm x 1000mm",
+        "material": "aluminum_glass",
+        "type": "double_door_with_sidelight"
+      },
+      "unit_entry": {
+        "dimensions": "2100mm x 900mm",
+        "material": "solid_core_timber",
+        "type": "hinged_single"
+      },
+      "interior": {
+        "dimensions": "2100mm x 800mm",
+        "material": "hollow_core_timber",
+        "type": "hinged_single"
+      },
+      "bathroom": {
+        "dimensions": "2100mm x 700mm",
+        "material": "solid_core_timber",
+        "type": "hinged_single"
+      }
+    }
+  },
+  "circulation": {
+    "stairs": {
+      "type": "reinforced_concrete_straight_run",
+      "width_mm": 1200,
+      "riser_mm": 175,
+      "tread_mm": 250,
+      "location": "central_core"
+    },
+    "corridors": {
+      "width_mm": 1500,
+      "finishes": "ceramic_tile_floor_painted_walls"
+    },
+    "elevator": {
+      "required": true,
+      "type": "passenger_elevator",
+      "capacity": "8_persons_630kg",
+      "shaft_dimensions": "2000mm x 1600mm"
+    }
+  },
+  "floor_plans": {
+    "ground_floor": {
+      "height": 4000,
+      "elevation_above_grade": 1.5,
+      "use": "commercial_retail",
+      "spaces": [
+        "retail_units_4x60m2",
+        "lobby",
+        "stairs",
+        "elevator",
+        "service_rooms"
+      ]
+    },
+    "typical_floor": {
+      "applies_to_floors": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "height": 3000,
+      "use": "residential_apartments",
+      "units_per_floor": 4,
+      "unit_layout": {
+        "type": "2_bedroom_apartment",
+        "area_m2": 75,
+        "spaces": [
+          "living_dining_25m2",
+          "kitchen_8m2",
+          "bedroom1_12m2",
+          "bedroom2_10m2",
+          "bathroom_5m2",
+          "storage_3m2",
+          "balcony_6m2"
+        ]
+      }
+    }
+  },
+  "finishes": {
+    "living": {
+      "floor": "ceramic_tiles_600x600",
+      "walls": "lime_plaster_painted",
+      "ceiling": "gypsum_board_suspended",
+      "ceiling_height_mm": 2700
+    },
+    "bedroom": {
+      "floor": "ceramic_tiles_300x300",
+      "walls": "lime_plaster_painted",
+      "ceiling": "cement_plaster_painted",
+      "ceiling_height_mm": 2700
+    },
+    "wet": {
+      "floor": "non_slip_ceramic_tiles_waterproofed",
+      "walls": "ceramic_wall_tiles_1500mm_height",
+      "ceiling": "cement_plaster_anti_fungal_paint",
+      "ceiling_height_mm": 2700
+    },
+    "retail": {
+      "floor": "polished_concrete_hardener",
+      "walls": "cement_plaster_painted",
+      "ceiling": "exposed_concrete_painted",
+      "ceiling_height_mm": 3500
+    },
+    "circulation": {
+      "floor": "non_slip_ceramic_tiles",
+      "walls": "cement_plaster_painted",
+      "ceiling": "cement_plaster_painted",
+      "ceiling_height_mm": 2400
+    },
+    "outdoor": {
+      "floor": "concrete_paving_non_slip",
+      "walls": "cement_render_painted",
+      "ceiling": "n/a",
+      "ceiling_height_mm": 0
+    }
+  },
+  "mep": {
+    "mechanical": {
+      "ventilation_strategy": "natural_cross_ventilation_primary",
+      "supplemental_cooling": "split_ac_rough_in_all_units",
+      "exhaust_systems": "bathroom_exhaust_fans_kitchen_range_hoods"
+    },
+    "electrical": {
+      "supply": "3_phase_415V_from_utility",
+      "distribution": "main_db_ground_floor_sub_db_each_floor",
+      "metering": "individual_unit_meters",
+      "wiring": "PVC_conduit_copper_conductors",
+      "per_unit": {
+        "outlets": 12,
+        "lighting_points": 8,
+        "ac_points": 3,
+        "fan_points": 4
+      },
+      "common_areas": {
+        "emergency_lighting": true,
+        "exit_signs": true,
+        "lightning_protection": "air_terminal_down_conductor_earth_electrode"
+      }
+    },
+    "plumbing": {
+      "water_supply": {
+        "source": "municipal_main_with_booster_pump",
+        "tank": "10000L_rooftop_polyethylene",
+        "distribution": "down_feed_gravity",
+        "pipe_material": "PPR_pipes_corrosion_resistant"
+      },
+      "hot_water": "individual_electric_geysers_per_unit",
+      "drainage": {
+        "waste": "110mm_PVC_pipes_to_soak_pit",
+        "storm": "sized_for_250mm_april_rainfall"
+      },
+      "rainwater": "collection_from_roof_to_storage_tank"
+    },
+    "fire_protection": {
+      "type": "wet_riser_system",
+      "equipment": "fire_extinguishers_hose_reels",
+      "escape_routes": "protected_staircase_emergency_exits",
+      "rated_doors": "fire_doors_staircase_plant_rooms"
+    }
+  },
+  "fixtures": {
+    "bathroom": {
+      "wc": "close_coupled_water_efficient",
+      "wash_basin": "wall_hung_ceramic",
+      "shower": "tiled_shower_area_floor_drain",
+      "accessories": "grab_rails_toilet_paper_holder_towel_rails"
+    },
+    "kitchen": {
+      "sink": "stainless_steel_single_bowl",
+      "countertop": "laminate_worktop",
+      "provisions": "space_for_refrigerator_cooker_washing_machine"
+    }
+  },
+  "climate_adaptations": [
+    {
+      "feature": "cross_ventilation_design",
+      "specification": "Opposite wall windows with casement opening, 35% window-wall ratio",
+      "addresses": "High humidity (77%) and hot temperatures (26.7\u00b0C avg)",
+      "data_source": "climate.humidity.annual_avg_percent, climate.temperature.annual_avg_c"
+    },
+    {
+      "feature": "concrete_overhangs_all_sides",
+      "specification": "600mm overhangs on all windows and balconies",
+      "addresses": "High solar radiation (5.2 kWh/m\u00b2/day) and hot climate",
+      "data_source": "climate.solar_radiation.annual_avg_kwh_m2_day"
+    },
+    {
+      "feature": "reflective_white_roof_coating",
+      "specification": "White reflective coating on flat roof surface",
+      "addresses": "Maximum temperatures of 31.2\u00b0C and high solar exposure",
+      "data_source": "climate.temperature.annual_max_c"
+    },
+    {
+      "feature": "elevated_ground_floor",
+      "specification": "Ground floor elevated 1.5m above grade",
+      "addresses": "High flood risk from 1073mm annual rainfall and low elevation areas",
+      "data_source": "disasters.flood.risk_level, climate.precipitation.annual_mm"
+    },
+    {
+      "feature": "seismic_resistant_frame",
+      "specification": "Reinforced concrete frame with special seismic detailing",
+      "addresses": "Very high earthquake risk with max 7.4 magnitude events",
+      "data_source": "disasters.earthquake.risk_level, disasters.earthquake.max_magnitude"
+    },
+    {
+      "feature": "enhanced_drainage_system",
+      "specification": "Storm water system sized for 250mm April peak rainfall",
+      "addresses": "Heavy seasonal rainfall with 250mm wettest month",
+      "data_source": "climate.precipitation.monthly_averages_mm.April"
+    },
+    {
+      "feature": "ventilated_cavity_walls",
+      "specification": "50mm ventilated cavity in exterior walls without insulation",
+      "addresses": "Hot-humid climate requires ventilation over thermal insulation",
+      "data_source": "climate.temperature.annual_avg_c, climate.humidity.annual_avg_percent"
+    },
+    {
+      "feature": "corrosion_resistant_materials",
+      "specification": "PPR plumbing pipes and aluminum window frames",
+      "addresses": "Coastal location with salt air exposure and high humidity",
+      "data_source": "coordinates (coastal city), climate.humidity.annual_avg_percent"
+    }
+  ],
+  "design_rationale": {
+    "narrative": "This 5-story mixed-use building responds to Dar es Salaam's hot-humid tropical climate through natural ventilation priority, reflective surfaces, and elevated flood-resistant design. The reinforced concrete frame with enhanced seismic detailing addresses very high earthquake risk while the deep foundation system manages expansive clay soil conditions. Commercial ground floor with residential upper floors suits the urban context with elevated positioning for flood resilience.",
+    "key_tradeoffs": [
+      {
+        "decision": "Natural ventilation over air conditioning as primary cooling",
+        "rationale": "Reduces energy costs and maintenance while being culturally appropriate, though may require AC supplementation during peak heat periods"
+      },
+      {
+        "decision": "Reinforced slab foundation instead of pile foundation",
+        "rationale": "More economical for 120 kPa bearing capacity soil while managing clay expansion, though requires careful moisture management"
+      },
+      {
+        "decision": "5 stories maximum height",
+        "rationale": "Balances density needs with structural costs in high seismic zone and maintains compatibility with local infrastructure"
+      },
+      {
+        "decision": "Flat roof over pitched roof",
+        "rationale": "Better for hot climate cooling and rooftop activities despite 1073mm annual rainfall, with enhanced waterproofing system"
+      }
+    ]
+  }
+}
